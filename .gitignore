@@ -1,0 +1,10 @@
+*.swp
+.DS_Store
+*.log
+*.aux
+*.nav
+*.out
+*.snm
+*.toc
+*.pdf
+Coursework/*.tex
