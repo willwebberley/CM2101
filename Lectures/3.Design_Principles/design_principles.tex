@@ -1,6 +1,6 @@
 \input{../style}
 
-\title{Design and Usability Principles}
+\title{Design and Usability Principles \& Heuristics}
 \subtitle{CM2101: Human-Computer Interaction}
 
 \begin{document}
@@ -24,35 +24,152 @@
         \item Feedback
         \item Constraint
         \item Mapping
+        \item Consistency
         \item Affordance
     \end{enumerate}
 }
 
 \frame{
     \frametitle{Design principles: Visibility}
-    Are available actions visible and obvious?
-
-        
+    Are available actions visible and obvious? Make relevant parts visible.
+    \vskip15pt
+    \centering
+    \includegraphics[width=7cm]{media/wow.jpg}    
 }   
 
 \frame{
     \frametitle{Design principles: Feedback}
-
+    Update the user on what's going on. Aurally, visibly, feeling-y (e.g. haptic feedback).
+    \vskip15pt
+    \centering
+    \includegraphics[width=7cm]{media/progress_bar.png}    
 }
 
 \frame{
     \frametitle{Design principles: Constraint}
+    \begin{itemize}
+        \item Restrict possible actions that can be performed
+        \item Stop users from doing things wrong and to help prevent errors 
+        \item Types of constraint (Norman 1999)
+        \begin{itemize}
+            \item Physical
+            \item Cultural
+            \item Logical
+        \end{itemize}
+    \end{itemize}
+}
 
+\frame{
+    \frametitle{Design principles: Constraint}
+    \textbf{Physical constraint}
+    \begin{columns}
+        \column{.5\textwidth}
+            \begin{itemize}
+                \item The way physical objects restrict movement
+                \item How many ways can USB ($<$ v4.0) be inserted?
+                \item These constraints prevent physical damage and mistakes from being made.
+                \item Bad example: optical media
+            \end{itemize}
+        \column{.5\textwidth}
+            \includegraphics[width=4cm]{media/usb.jpg}
+    \end{columns}
+}
+
+\frame{
+    \frametitle{Design principles: Constraint}
+    \textbf{Cultural constraint}
+    \begin{columns}
+        \column{.5\textwidth}
+            \begin{itemize} 
+                \item Learned conventions prevent or guide actions
+                \item Users can associate components with cultural conventions
+                \item Remember that not all cultures have the same conventions
+            \end{itemize}
+        \column{.5\textwidth}
+            \includegraphics[width=4cm]{media/triangle.png}
+    \end{columns}
+}
+
+\frame{
+    \frametitle{Design principles: Constraint}
+    \textbf{Logical constraint}
+    \begin{columns}
+        \column{.5\textwidth}
+            \begin{itemize} 
+                \item Rely on common sense and users' ability to be logical
+                \item Read indicators 
+                \item For example, assume users know not to plug an HDMI cable into a DVI port
+                \item Similar examples in software (e.g. know the general form of an email address)
+            \end{itemize}
+        \column{.5\textwidth}
+            \includegraphics[width=5cm]{media/email.png}
+    \end{columns}
 }
 
 \frame{
     \frametitle{Design principles: Mapping}
+    Relationship between controls and movements in the real-world
+    \vskip15pt
+    \centering
+    \begin{columns}
+        \column{.5\textwidth}
+            \includegraphics[width=4cm]{media/good_hob.jpg}
+        \column{.5\textwidth}
+            \includegraphics[width=4cm]{media/bad_hob.jpg}
+    \end{columns}    
+}
 
+\frame{
+    \frametitle{Design principles: Consistency}
+    \begin{itemize}
+        \item Interfaces should use the same words/icons/colours/sounds/experience for the same tasks
+        \item Associated tasks should be made clear
+        \item Consistent interfaces help with \textit{learnability} (we'll cover this shortly)
+        \item Types of consistency
+        \begin{itemize}
+            \item Internal
+            \item External
+        \end{itemize}
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Design principles: Consistency}
+    \textbf{Internal consistency}
+    \begin{columns}
+        \column{.5\textwidth}
+            \begin{itemize} 
+                \item Operations should behave the same within an application
+                \item Look and feel should be consistent (e.g. same colour scheme, fonts, text-sizes, etc.)
+                \item Hard in complex situations
+            \end{itemize}
+        \column{.5\textwidth}
+            \includegraphics[width=5cm]{media/internal_consistency.png}
+    \end{columns}
+}
+
+\frame{
+    \frametitle{Design principles: Consistency}
+    \textbf{External consistency}
+    \begin{columns}
+        \column{.5\textwidth}
+            \begin{itemize} 
+                \item Linked to \textit{Mapping}
+                \item Design interfaces to be the same across applications and devices
+                \item Hard because everyone has different opinions on how things should be done
+                \item Often standards are set in various fields to help with this (e.g. W3C)
+            \end{itemize}
+        \column{.5\textwidth}
+            \includegraphics[width=5cm]{media/external_consistency.jpg}
+    \end{columns}
 }
 
 \frame{
     \frametitle{Design principles: Affordance}
-
+    An attribute of an object that people recognise and know how to use (e.g. `pulling a door handle' and `pressing a button'). Linked to \textit{Mapping}, yet some mappings are better than others! 
+    \vskip15pt
+    \centering
+    \includegraphics[width=7cm]{media/slider.png}
 }            
 
 \frame{
@@ -260,5 +377,28 @@
     \end{enumerate}
 }
 
+\frame{
+    \frametitle{Revision questions}
+    \begin{enumerate}
+        \item What are design principles and why are they useful?
+        \item Name and describe the three types of constraint when considering design principles?
+        \item Why is mapping between systems and the real-world important?
+        \item What is external consistency and describe a way in which it can be addressed?
+        \item As well as by \textit{frequency}, in which other way should usability problems be reduced?
+        \item Give an example of a system where \textit{visibility} is not considered as a usability principle.
+        \item Describe a way in which you might help reduce errors occurring in a system.
+        \item Describe what is meant by the \textit{user control \& memorability} usability principle.
+    \end{enumerate}
+}
+
+\frame{
+    \frametitle{Summary}
+    \begin{itemize}
+        \item Introduction and description of the general \alert{design principles}
+        \item Overview of the general \alert{usability principles}
+        \item Identified use of both types of principles
+        \item Introduction to Neilsen's heuristics 
+    \end{itemize}
+}
 
 \end{document}
