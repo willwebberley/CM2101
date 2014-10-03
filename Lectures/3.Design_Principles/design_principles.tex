@@ -26,6 +26,9 @@
         \item Mapping
         \item Consistency
         \item Affordance
+        \item Predictability
+        \item Synthesisability
+        \item Familiarity
     \end{enumerate}
 }
 
@@ -39,7 +42,7 @@
 
 \frame{
     \frametitle{Design principles: Feedback}
-    Update the user on what's going on. Aurally, visibly, feeling-y (e.g. haptic feedback).
+    Update the user on what's going on. Aurally, visibly, physically (e.g. haptic feedback in games, keyboard presses, etc.).
     \vskip15pt
     \centering
     \includegraphics[width=7cm]{media/progress_bar.png}    
@@ -108,7 +111,7 @@
 
 \frame{
     \frametitle{Design principles: Mapping}
-    Relationship between controls and movements in the real-world
+    Relationship between controls and movements in the real-world. Use similar controls for those for similar real-world objects. A bad example of mapping in the real-world is a bank of light switches.
     \vskip15pt
     \centering
     \begin{columns}
@@ -125,6 +128,7 @@
         \item Interfaces should use the same words/icons/colours/sounds/experience for the same tasks
         \item Associated tasks should be made clear
         \item Consistent interfaces help with \textit{learnability} (we'll cover this shortly)
+        \item The `principles of least surprise'
         \item Types of consistency
         \begin{itemize}
             \item Internal
@@ -141,6 +145,7 @@
             \begin{itemize} 
                 \item Operations should behave the same within an application
                 \item Look and feel should be consistent (e.g. same colour scheme, fonts, text-sizes, etc.)
+                \item Use the same terminology (e.g. don't use both `save file' and `write to disk')
                 \item Hard in complex situations
             \end{itemize}
         \column{.5\textwidth}
@@ -172,6 +177,8 @@
     \includegraphics[width=7cm]{media/slider.png}
 }            
 
+
+
 \frame{
     \frametitle{Revisiting usability}
     \alert{Usability}
@@ -192,11 +199,15 @@
 }
 
 \frame{
-    \frametitle{Design principles and usability principles}
+    \frametitle{Revisiting usability}
     \center{
-        Usability principles are useful for \alert{evaluating interactions} against.
-        \vskip30pt
         Design principles are useful for \alert{designing interfaces}.
+        \vskip30pt
+        Usability principles are useful for \alert{evaluating interactions} and often address the design principles.
+    }
+    \vskip40pt
+    \flushleft{
+        Generally, the two sets of principles can be used interchangeably in the design and evaluation of interfaces and interactions.
     }
 }
 
@@ -207,12 +218,16 @@
     }
     \vskip20pt
     \flushleft{
-        Where quality = \alert{absence of problems}
+        Where quality = \alert{absence of problems}         
     }
     \begin{itemize}
         \item Evaluate a system to discover usability problems
         \item Reduce their frequency and severity
         \item Highlighted through \alert{user evaluation} and \alert{heuristic evaluation}
+        \item Software designers have a lot to consider (e.g. functionality, performance, cost, security, robustness, usability, etc.)
+        \begin{itemize}
+            \item However, usability is our main goal in HCI
+        \end{itemize}
     \end{itemize}
 }
 
@@ -226,11 +241,20 @@
         \item Efficiency
         \item Satisfaction 
     \end{enumerate}
+    \vskip30pt
+    Often address the design principles (given in italics in the following slides).
 }
 
 \frame{
     \frametitle{General usability principles: Learnability}
-    \alert{How easy is the system to use the first time?\\ How easy is it to learn?}
+    \alert{How easy is the system to use the first time?\\ How easy is it to learn?}\\
+    Types of learnability
+    \begin{itemize}
+        \item Predictability
+        \item Synthesisability
+        \item Familiarity
+        \item Generalisability
+    \end{itemize}
     \vskip30pt
     \begin{columns}
         \column{.4\textwidth}
@@ -243,8 +267,57 @@
 }
 
 \frame{
-    \frametitle{General usability principles: Visibility}
-    \alert{How visible is the state of the system?}
+    \frametitle{General usability principles: Learnability}
+    \textbf{Predictability}
+    \vskip20pt
+    Can user predict what will happen if an action is taken? This can be based on \alert{past interaction history}.\\
+    For example, should users expect to receive a confirm dialogue when deleting an object?
+    \vskip15pt
+    \centering
+    \includegraphics[height=3cm]{media/predictability_1.png}
+    \includegraphics[height=3cm]{media/predictability_2.png}
+}
+
+\frame{
+    \frametitle{General usability principles: Learnability}
+    \textbf{Synthesisability}
+    \vskip20pt
+    Can the user see the result of an action and assess events of past actions? 
+    \begin{itemize}
+        \item Linked to \textit{Feedback}
+        \item Some interfaces promise \alert{immediate honesty} (i.e. the new state is immediately obvious)
+        \item Other interfaces promise \alert{eventual honesty} (i.e. in the case of asynchronous tasks)
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{General usability principles: Learnability}
+    \textbf{Familiarity}
+    \vskip20pt
+    Can user expectation be matched?
+    \begin{itemize}
+        \item Address \textit{Affordance} by making components feel familiar
+        \item Use natural (or domain-specific language)
+        \item Address \textit{Predictability} by improving system guessability
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{General usability principles: Learnability}
+    \textbf{Generalisability}
+    \vskip20pt
+    Is it easy to perform new tasks given the user's present knowledge of the system?
+    \begin{itemize}
+        \item Related to \textit{Consistency} 
+        \item For example, if user knows the tool for drawing a square, will they know how to draw a circle?
+        \item Offering standard procedures (e.g. copy+paste) also helps this
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Design principles: Visibility}
+    \alert{How visible is the state of the system?}\\
+    Addresses the \textit{Visibility} design principle, but more from an \alert{interaction} point of view than just the \alert{interface}.
     \vskip30pt
     \begin{columns}
         \column{.4\textwidth}
@@ -258,7 +331,8 @@
 
 \frame{
     \frametitle{General usability principles: User control \& memorability}
-    \alert{Is user free to explore the system?\\ How easy is it to return to the system after not using it?}
+    \alert{Is user free to explore the system?\\ How easy is it to return to the system after not using it?\\ Are abbreviations and shortcuts appropriate?}
+    Human working memory is small and very temporary
     \vskip30pt
     \begin{columns}
         \column{.45\textwidth}
@@ -287,6 +361,10 @@
 \frame{
     \frametitle{General usability principles: Efficiency}
     \alert{Once learned, how quickly can tasks be performed?}
+    \begin{itemize}
+        \item Can experts gradually use the system faster?
+        \item Systems should be elastic to allow this, but also to support less-experienced uers.
+    \end{itemize}
 }   
 
 \frame{
@@ -307,16 +385,16 @@
     \frametitle{General usability principles}
     \begin{itemize}
         \item Systems can be evaluated \alert{with respect to} the principles
-        \item When designing interactions, try and \alert{consider all} principles
+        \item When designing interactions, try and \alert{consider all} usability and design principles
         \item Aim of systems should be to \alert{maximise} all
     \end{itemize}
     \vskip20pt
     For some systems, some principles are prioritised more than others.\\
-    For example, in iOS, \alert{\textit{Satisfaction}} is considered more highly than \alert{\textit{Visibility}}. 
+    For example, in iOS, \alert{\textit{Satisfaction}} is considered more highly than the design principle \alert{\textit{Visibility}}. 
 }
 
 \frame{
-    \frametitle{General usability principles}
+    \frametitle{Design and usability principles}
     \center{
         These principles form the baseline for \alert{Neilsen's heuristics}.
     }
@@ -364,7 +442,7 @@
         \end{itemize}
         \item Aesthetic and minimalist design
         \begin{itemize}
-            \item Do not display irrelevant information. Keep interface concise and provice contextually relevant actions.
+            \item Do not display irrelevant information. Keep interface concise and provide contextually relevant actions.
         \end{itemize}
         \item Help users recognise, diagnose, and recover from errors
         \begin{itemize}
@@ -381,7 +459,7 @@
     \frametitle{Revision questions}
     \begin{enumerate}
         \item What are design principles and why are they useful?
-        \item Name and describe the three types of constraint when considering design principles?
+        \item Name and describe three types of constraint when considering design principles.
         \item Why is mapping between systems and the real-world important?
         \item What is external consistency and describe a way in which it can be addressed?
         \item As well as by \textit{frequency}, in which other way should usability problems be reduced?
