@@ -7,6 +7,5 @@
 *.snm
 *.toc
 *.pdf
-Coursework/1.User_Evaluation/*.tex
 Coursework/2.Prototype/*.tex
 Labs/*.tex

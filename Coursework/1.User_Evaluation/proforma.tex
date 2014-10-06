@@ -1,0 +1,169 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage[dvipsnames]{color}
+
+\definecolor{mygray}{gray}{.75}
+
+\titleformat{name=\section,numberless}[display]
+  {\normalfont\scshape\Large}
+  {\hspace*{-10pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+80pt\relax}{2pt}\Huge}
+\titlespacing*{\section}{0pt}{30pt}{10pt}
+
+\titleformat{name=\subsection,numberless}[display]
+  {\normalfont\scshape}
+  {\hspace*{-10pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+30pt\relax}{0.4pt}\Huge}
+\titlespacing*{\subsection}{0pt}{20pt}{5pt}
+
+
+\begin{document}
+
+\Large\textbf{Cardiff School of Computer Science and Informatics}\\
+\large\textit{Coursework Proforma}
+\vskip30pt
+
+\section*{General}
+
+\begin{description}
+    \item[Module] CM2101 (Human-Computer Interaction)
+    \item[Lecturer] Will Webberley
+    \item[Title] Part 1: Usability Assessment and User Evaluation 
+    \item[Hand-out] Week 2 (Monday 6th October)
+    \item[Hand-in] Week 4 (deadline: Monday 20th October @ 17:00)
+    \item[Coursework worth] 20\%
+    \item[Assessment type] Small group 
+\end{description}
+This coursework is worth 20\% of the total marks available for this module.
+
+The penalty for late or non-submission is an award of zero marks. You are reminded of the need to comply with Cardiff University's Student Guide to Academic Integrity. Your work should be submitted using the official Coursework Submission Cover sheet.
+
+\subsection*{Submission Arrangements}
+There is \textbf{one} submission component for this coursework (in addition to an individual coursework cover sheet).
+\begin{enumerate}
+    \item \textbf{Week 4 (Monday 20th October @ 17:00)} - User evaluation report (PDF) uploaded to Learning Central. 
+\end{enumerate}
+You must follow all of the submission components in order to achieve the marks for this assessment.
+
+\section*{Instructions}
+Form a group with two of your coursemates to ensure you are in a group of size \textbf{three}.
+
+The deliverable for this coursework is a single report from each group on the usability of systems chosen within your group.
+
+In general, \textit{each group member} should follow these steps:
+\begin{enumerate}
+    \item Select an electronic system (e.g. a mobile app, website, etc.) that s/he knows well, but the other members do \textit{not}.
+    \item Identify \textit{two} tasks within the system that users typically carry out. These tasks should be complex enough so that they are not completely trivial.
+    \item Conduct a \textit{rigorous} `think aloud' user evaluation on each of the other members on each of the two tasks.
+    \item Write a sub-report containing;
+    \begin{itemize}
+        \item An overview of the selected system, its purpose and its intended audience
+        \item A use-case diagram and use-cases (including basic flows) describing the identified tasks 
+        \item A write-up of the results of the `think aloud' evaluation tests. Where appropriate, consider and make references to the usability and design principles and guidelines covered in the lectures. 
+    \end{itemize}
+\end{enumerate} 
+The author of each sub-report should be clearly identified.
+
+The group report should then be compiled from these sub-reports and a final section should be appended. This section should be contributed to by the entire group and contain;
+\begin{itemize}
+    \item Reflection on the user `think aloud' evaluations conducted, including;
+    \begin{itemize}
+        \item What problem areas the evaluation test highlighted 
+        \item Were there any common problems identified in the systems?
+        \item What common positive usability characteristics were observed?
+        \item Were there any cases of bad or non-informative errors?
+        \item And so on... 
+    \end{itemize}
+    \item Imagine that the group is now part of the interaction design team working in an iterative environment for the selected systems. Write a summary of the changes you would make in the next iteration of each system as a result of the user evaluations and their relationships to the design and usability studies conducted. Remember to justify each decision. 
+\end{itemize}
+Marks for this coursework are awarded as follows:
+
+\begin{itemize}
+    \item \textbf{65\%} - Individual `sub-report' 
+    \item \textbf{35\%} - Group reflection and improvements section 
+\end{itemize}
+You will be given access to the mark scheme for this coursework, so read through that to see a more complete breakdown.
+
+The sections below provide more information on the two parts of this coursework.
+
+\subsection*{Individual sub-report}
+For this stage, each member of the group should select a system that s/he is familiar with, but that the other group members have no experience with (or at least very little). This system could be a mobile app, a website, a desktop app, or some other electronic system that supports some kind of rich functionality.
+
+Each member should identify two tasks within their selected system that a typical user may wish to carry out. Ensure that these tasks are not completely obvious to end-users and contain at least a few steps to accomplish. \\
+For example, two distinct tasks within Snapchat (a self-destructive messaging service for smartphones) are:
+\begin{enumerate}
+    \item Change the user's username
+    \item Add another Snapchat user as a friend
+\end{enumerate} 
+However, it might be best to select tasks with more steps than this to get more interesting results from the usability study.
+
+Many applications of this form may require users to register an account with the service. If your group members are not happy with registering for the service, then select a different app or allow them to temporarily use your account whilst you observe them during the user evaluation. 
+
+You will now need to conduct a `think aloud' user evaluation study on each of your group members, as described in lectures. You should ensure that the correct procedure is followed, in particular \textit{for each group member};
+\begin{enumerate}
+    \item Ensure the location is as suitable as possible and allows the user to use the system without interruption. Follow the pre-test guidelines covered in lectures.
+    \item Give a brief overview of the system (without showing it)
+    \item Describe the first task and give them the time to complete the task
+    \item As they carry out the task, encourage them to speak more (if they are being quiet) by asking questions or prompting them
+    \item Throughout, make notes about their thoughts and how these relate to their current stage within the system
+    \item Repeat steps 3-5 with the second task.
+\end{enumerate}
+You should now write a sub-report containing the details of the system-selection and the evaluation process.
+
+Begin by writing a brief overview of the system, including what its purpose is and its intended audience. You should then describe your identified tasks through use-cases. For this, construct a simple use-case diagram for the main functions of the app (your two tasks should be included). Go on to describing each tasks' basic flows and any pre/post-conditions.  
+
+Now you should describe the tests conducted. Think about what the main frustrations were, if there were any errors, or if everything went well, if the user got stuck, and so on. Then evaluate your selected system using the results of the tests.  In your evaluation you should consider the general usability principles of HCI we have covered in lectures. Use the test and your own experiences with the system to note where the system addressed these principles well, and where it didn't. If you find it easier, then feel free to include and refer to screenshots of the systems in the appendices of the report (these should come after the \textit{whole} report - not after each sub-report).
+
+The individual sub-reports should each be about 4 pages in length (or 5 if your use-case diagrams and basic flows take up a lot of space).
+
+\subsection*{Group relfection and improvements}
+The sub-reports from each group member should be compiled into a single document. It should be made clear (either in a contents page or within each sub-report itself) which student wrote the sub-report by including student numbers.
+
+Now, as a group, write a final section to the report that brings together the main points from the sub-reports. This should begin with a reflection on the evaluations you conducted individually. You should focus on (but not limited to):
+\begin{itemize}
+    \item Problem areas highlighted by the tests
+    \item Common problems encountered across the systems  
+    \item Good usability areas identified
+\end{itemize}
+Finally, your group should imagine that you are part of the interaction design team, working iteratively on each of the selected systems. For each system, summarise the changes you'd make to the next iteration of the interaction design. These points should be drawn from the results of the user evaluations and you should justify each decision you make with respect to the design principles and literature covered in lectures and make references to the general usability principles.      
+
+The final section should also be about 4 or 5 pages in length, making the entire report around 16 pages long.
+
+\section*{Submission instructions}
+All submissions should be made electronically through Learning Central.
+
+\begin{itemize}
+    \item \textit{Every student} must submit a cover-sheet in PDF format.
+    \item \textit{One student from each group} must be responsible for submitting the compiled report in PDF format.
+\end{itemize}
+
+Thefore most students will have one submission file, and one student from each group will have two. It is each group's responsibility to ensure that \textit{each} student member is represented by the report uploaded by that group.
+\vskip15pt
+\begin{tabular}{| l | l | l |}
+    \hline
+    \textsc{Description} & \textsc{Type} & \textsc{Name} \\
+    \hline
+    Cover sheet (\textbf{Compulsory for each student}) & PDF & [student number].pdf \\
+    Report (\textbf{Compulsory for each group}) & PDF & report\_[group size].pdf \\ 
+    \hline
+\end{tabular}
+
+\section*{Criteria for assessment}
+Credit will be awarded against the following criteria.
+\begin{itemize}
+    \item Your ability to identify distinct interaction tasks within systems    
+    \item Your understanding of the `think aloud' evaluation test
+    \item Your understanding of the importance of involving users in the design of interactive systems
+    \item Your ability to reflect on the usability of systems using pre-defined principles
+    \item Your ability to identify areas of improvement in interactive systems as a result of user evaluations and justifications through usability criteria
+\end{itemize}
+Feedback on your performance will address each of these criteria. However, for a more detailed break-down, please see the mark scheme.
+
+\section*{Further details}
+Feedback on your coursework will address the above criteria and will be returned in approximately 3 weeks.\\
+This will be supplemented with oral feedback via lectures.
+
+\end{document}

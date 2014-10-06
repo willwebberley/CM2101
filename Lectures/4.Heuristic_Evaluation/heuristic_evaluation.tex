@@ -61,9 +61,7 @@
         \end{itemize}
         \item Severity rating
         \begin{itemize}
-            \item Evaluators work together
-            \item Severity rating applied to each problem
-            \item Problems prioritised by severity
+            \item Evaluators apply a severity ranking to each usability problem
         \end{itemize}
         \item Debrief
         \begin{itemize}
@@ -137,6 +135,30 @@
 }
 
 \frame{
+    \frametitle{Heuristic evaluation: how many evaluators? [1]}
+    \textbf{3-5 evaluators find 65-75\% of usability problems}
+    \begin{itemize}
+        \item Different evaluators identify different usability problems
+        \item Usually, little overlap between identified problems
+    \end{itemize}
+    \center{
+        \includegraphics[width=7cm]{media/graph1.png}   
+    }
+}
+
+\frame{
+    \frametitle{Heuristic evaluation: how many evaluators? [1]}
+    \textbf{What is the best cost-benefit?}
+    \center{
+        \includegraphics[width=7cm]{media/graph2.png}   
+    }
+    \vskip20pt
+    \flushleft{
+        [1] - \textit{How to Conduct a Heuristic Evaluation} by Jakob Neilsen
+    }
+}
+
+\frame{
     \frametitle{Heuristic vs. user evaluation}
     Example of user evaluation: `think aloud' (see last week's slides)
     \begin{itemize}
@@ -187,6 +209,7 @@
         \item Recognition rather than recall
         \begin{itemize}
             \item Reduce users' memory loads by making actions and options visible. Use standard practices.
+            \item Users should be able to recognise an interface and options available without having to remember this exact instance.
         \end{itemize}
         \item Flexibility and efficiency
         \begin{itemize}
@@ -221,34 +244,51 @@
     \frametitle{Introducing severity ratings}
     \textbf{Contributing factors}
     \begin{itemize}
-        \item How common is the problem?
+        \item \textbf{Frequency} - How common is the problem?
         \begin{enumerate}
             \item Once
             \item Rarely
             \item Frequently
         \end{enumerate}
-        \item How impactful is the problem?
+        \item \textbf{Impact} - How easy is the problem to overcome?
         \begin{enumerate}
             \item Small impact
             \item Medium impact
             \item Large impact
         \end{enumerate}
-        \item How persistent is the problem?
+        \item \textbf{Persistence} - Can users overcome once they know about it or will they keep being bothered about it?
         \begin{enumerate}
-            \item Easy to fix
-            \item Long fix
+            \item Easy to overcome 
+            \item Persistent problem 
         \end{enumerate}
     \end{itemize}
+}
+
+\frame{
+    \frametitle{Severity ratings: overview}
+    \begin{itemize}
+        \item Can be decided by evaluators as they carry out the evaluation
+        \item Though can also be collected \textit{after} the main evaluation stage
+        \begin{itemize}
+            \item A detailed description (inc. screenshots, if necessary) of all problems identified are sent to each evaluator
+            \item Evaluators individually rate each problem
+            \item Each evaluator will only have discovered a subset of the complete list of problems
+            \item Evaluators may wish to re-try the system to get a better idea of how severe a problem is
+        \end{itemize}
+        \item Mean is taken of the severity of each problem and discussed later in the debriefing
+   \end{itemize}
 }
 
 \frame{
     \frametitle{Severity ratings: scale}
     \textbf{Applying a rating scale} 
     \begin{enumerate}
-        \item \alert{Cosmetic}: fix not necessary
+        \setcounter{enumi}{-1}
+        \item \alert{No problem}: I don't agree that this is a usability problem
+        \item \alert{Cosmetic}: fix not necessary unless extra time available
         \item \alert{Minor}: fix required at low priority
         \item \alert{Major}: fix required at high priority
-        \item \alert{Catasrophic}: fix required within next iteration
+        \item \alert{Catastrophic}: fix required within next iteration or before release
     \end{enumerate}
 }
 
@@ -287,6 +327,16 @@
     \frametitle{Example evaluation card}
     \centering
     \includegraphics[width=\textwidth]{media/card_2.png}
+}
+
+\frame{
+    \frametitle{Heuristic evaluation: debriefing}
+    \begin{itemize}
+        \item Teakes place after all evaluation and severity rankings have been applied
+        \item All evaluators and observers meet with representatives from the design team
+        \item Brainstorm for ideas and fixes to the problems
+        \item Also a good opportunity to discuss positive aspects (since heuristic evaluation generally does not)
+    \end{itemize}
 }
 
 \frame{

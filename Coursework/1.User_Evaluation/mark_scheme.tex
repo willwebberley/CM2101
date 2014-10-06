@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage[dvipsnames]{color}
+
+\definecolor{mygray}{gray}{.75}
+
+\titleformat{name=\section,numberless}[display]
+  {\normalfont\scshape\Large}
+  {\hspace*{-10pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+80pt\relax}{2pt}\Huge}
+\titlespacing*{\section}{0pt}{30pt}{10pt}
+
+\titleformat{name=\subsection,numberless}[display]
+  {\normalfont\scshape}
+  {\hspace*{-10pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+30pt\relax}{0.4pt}\Huge}
+\titlespacing*{\subsection}{0pt}{20pt}{5pt}
+
+
+\begin{document}
+
+\textbf{CM2101 Coursework (Part 1) Mark Scheme}\\
+\vskip5pt
+This coursework represents 20\% of the marks available for this module.
+
+\vskip30pt
+
+
+\begin{description}
+    \item[Student ID number]
+\end{description}
+
+\section*{65\% - Individual sub-report}
+Marks for this section go only to the student who authored the sub-report.\\
+
+\begin{tabular}{p{11cm}|c|c}
+    \textsc{Description} & \textsc{Available} & \textsc{Awarded} \\
+    \hline
+    \hline
+    Overview of the selected system (incl. platform, audience, intended use) & 10 &  \\
+    \hline
+    Description of two system tasks (incl. through use-case diagrams and use-cases) & 10 & \\
+    \hline 
+    Description of your `think aloud' test setup(s) and your pre-test procedure(s) & 5 & \\
+    \hline
+    Results of the test(s) (incl. problem areas and identified good usability points) & 25 & \\
+    \hline  
+    Evaluation of the test results against material covered in lectures and the general usability principles & 15 & \\ 
+    \hline
+    \hline
+    \textsc{Total} & 65 &
+\end{tabular}
+
+\section*{35\% - Reflection \& improvements}
+Marks for this section are equally awarded to the entire group (this section will be identical for each member of the group).\\
+
+\begin{tabular}{p{11cm}|c|c}
+    \textsc{Description} & \textsc{Available} & \textsc{Awarded} \\
+    \hline
+    \hline
+    Reflection on all `think aloud' tests. What did they help uncover? What similarities were there? etc. & 12 &  \\
+    \hline
+    Justified `improvements' made to each system as a result of the tests & 12 & \\
+    \hline
+    Ties from the reflection and improvements to usability principles & 6 & \\
+    \hline
+    Report is sensibly structured and presented well & 5 & \\ 
+    \hline
+    \hline
+    \textsc{Total} & 35 &
+\end{tabular}
+
+\vskip10pt
+\section*{Feedback and result}
+\begin{verbatim}Feedback for student:\end{verbatim}
+
+\vskip65pt
+
+\begin{verbatim}Final mark for student:         / 100\end{verbatim}
+
+\end{document}
