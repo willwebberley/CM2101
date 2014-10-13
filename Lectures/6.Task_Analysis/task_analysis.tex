@@ -42,7 +42,7 @@
     \begin{itemize}
         \item Specify task structure
         \item More detailed interaction with a user interface
-        \item Helps ullustrate \alert{architectural issues} in interactive systems
+        \item Helps illustrate \alert{architectural issues} in interactive systems
         \item Helps as a pre-design tool to compute a series of steps to complete a goal
         \item Many task structures are \alert{hierarchical}
         \item We need to consider \alert{system tasks} as well as user tasks
@@ -54,16 +54,17 @@
     \textbf{Task analysis generally ties in quite deeply to GOMS and KLM}
     \vskip10pt
     \begin{columns}
-        \column{.5\textwidth}
+        \column{.6\textwidth}
             \begin{itemize}
-                \item How complex is a task?
+                \item How complex is a task? Allows experts to describe them
+                \item Ensures each task can be completed
+                \item Allow \alert{errors} or \alert{omissions} in flows to be identified
                 \item How many \alert{steps} does the task involve?
-                \item Which \textit{cognitive} \alert{operators} does it involve?
-                \item Which \textit{motor} operators does it involve?
-                \item Is there more than one \alert{method} to complete the task
-                \item Use \alert{selection} rules to choose between them 
+                \item Which \textit{cognitive} and \textit{motor} \alert{operators} does it involve?
+                \item Is there more than one \alert{method} to complete the task?
+                \item Can evaluate against initial \alert{requirements}
             \end{itemize}
-        \column{.5\textwidth}
+        \column{.4\textwidth}
             \includegraphics[width=5cm]{media/cycle_2.png}    
     \end{columns}
 }
@@ -73,16 +74,17 @@
     \textbf{Again, with the help of GOMS and KLM...}    
     \vskip10pt
     \begin{columns}
-        \column{.5\textwidth}
+        \column{.6\textwidth}
             \begin{itemize}
                 \item Which controls need to be included?
                 \item Where should controls be placed?
-                \item Which parts of the system are most accessible?
-                \item How big should the buttons be?
+                \item How big should the buttons be? etc.
                 \item Which options should be on action bars? Which should be in menus?
-                \item etc.
+                \item Helps identify tasks \alert{shared} between the user and system
+                \item Identify where \alert{feedback} is useful
+                \item Sub-task ordering helps design \alert{dialogues}
             \end{itemize}    
-        \column{.5\textwidth}
+        \column{.4\textwidth}
             \includegraphics[width=5cm]{media/cycle_3.png}
     \end{columns}
 }
@@ -147,7 +149,7 @@
     \vskip15pt
     \begin{itemize}
         \item Consider the \textit{learnability} of the system
-        \item Consider the \textit{Memorability} of the system
+        \item Consider the \textit{memorability} of the system
         \item Reduce the amount of \alert{cognitive} power required in gulfs
         \item Reduce the amount of \alert{time} required to perform tasks
         \vskip20pt
@@ -172,7 +174,7 @@
         \item Consider:
         \begin{itemize}
             \item \alert{Goal}: the final state
-            \item \alert[Sub-goals}: sub-states required to achieve main goal
+            \item \alert{Sub-goals}: sub-states required to achieve main goal
             \item \alert{Action}: a task that requires no problem-solving or control structure
             \item \alert{Dialogue}: occurs to bind actions together to achieve a (sub-)goal        
         \end{itemize}
@@ -187,7 +189,7 @@
     \begin{itemize}
         \item \alert{Describe} the task as a goal to be reached
         \item Find conditions under which sub-goals should be executed
-    }
+    \end{itemize}
     \textbf{Involves}
     \begin{itemize}
         \item \alert{Identifying} tasks
@@ -213,7 +215,7 @@
         \item Represent in an appropriate \alert{notation}
         \item \alert{Generalise} across tasks
         \item Apply in \alert{design}
-    \end{itemize}
+    \end{enumerate}
 }
 
 \frame{
@@ -296,37 +298,6 @@
 }
 
 \frame{
-    \frametitle{Uses of Jackson notation}
-    \begin{columns}
-        \column{.5\textwidth}
-            \textbf{In `evaluation'}
-            \begin{itemize}
-                \item Allows experts to \alert{describe} tasks
-                \item Allows for \alert{errors} or \alert{omissions} in flows to be identified
-                \item Allows evaluation against original \alert{requirements}
-                \item Ensures each task can be completed
-            \end{itemize}
-        \column{.5\textwidth}
-            \includegraphics[width=5cm]{media/cycle_2.png}
-    \end{columns}
-}
-
-\frame{
-    \frametitle{Uses of Jackson notation}
-    \begin{columns}
-        \column{.5\textwidth}
-            \textbf{In `design'}
-            \begin{itemize}
-                \item Helps identify \alert{shared tasks} between user and system
-                \item Helps find where \alert{feedback} might be necessary
-                \item Task ordering helps design \alert{dialogues}
-            \end{itemize}
-        \column{.5\textwidth}
-            \includegraphics[width=5cm]{media/cycle_3.png}
-    \end{columns}
-}
-
-\frame{
     \frametitle{Task design: 3. Generalise}
     \begin{itemize}
         \item Find common sub-goals across primary goals
@@ -341,24 +312,40 @@
 
 \frame{
     \frametitle{Task design: 4. Apply in design}
-
+    \begin{itemize}
+        \item Design for how the system \alert{`asks' for information} it needs
+        \item Design for how the system \alert{provides information} back to the user
+        \item Allocate function and roles between the computer and the user
+        \item \alert{Design} the logical flow (dialogue) of events to complete each task
+        \item Ensure that the user's mental model and the system's representation of the task are compatible
+    \end{itemize}
 }
 
 \frame{
      \frametitle{Revision questions}
      \begin{enumerate}
-        \item
+        \item What is task analysis?
+        \item What does task analysis capture about a specific task?
+        \item What is a `goal' in the context of task analysis?
+        \item As well as focussing on the user, what else does task analysis consider?
+        \item How can task analysis be used in evaluation?
+        \item How can task analysis be used in design?
+        \item Describe what is meant by the gulfs of execution and evaluation and how they can be `bridged'.
+        \item How can task analysis help bridge the gulfs?
+        \item What are the 4 main stages of task design?
+        \item Describe Jackson Structured Development.
      \end{enumerate}
 }
 
 \frame{
     \frametitle{Summary}
     \begin{itemize}
-        \item 
+        \item Introduction to task analysis
+        \item Task analysis' role in evaluation and design
+        \item The gulfs of execution and evaluation
+        \item Task analysis process
+        \item Hierarchical task analysis notation: Jackson Structured Development
     \end{itemize}
 }    
-
-
-
 
 \end{document}
