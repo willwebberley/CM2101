@@ -37,7 +37,9 @@
         \textit{A description of the proposed system in terms of ideas about what it should \alert{do}, \alert{behave}, and \alert{look like} in a form understandable by users.}
     \end{center}
     \begin{itemize}
-        \item Turn user requirements into a conceptual model
+        \item The overall idea of the system
+        \item \alert{Task analysis} can be used in conceptual design
+        \item What is it trying to solve and how to support \alert{requirements}
         \item Consider \textit{many} designs
         \begin{itemize}
             \item ``To get a good idea, get lots of ideas'' (Rettig, 1994)
@@ -92,6 +94,7 @@
         \item Device considerations
         \item Controls and data display
         \item Icons and text
+        \item Style guides
     \end{itemize}
 }
 
@@ -119,7 +122,9 @@
     \begin{columns}
         \column{.5\textwidth}
             \begin{itemize}
+                \item A design \alert{hypothesis}
                 \item Initial `versions' during development
+                \item Communicating ideas
                 \item Used for evaluation before improvement or release
                 \item Often \textit{not} the released version
                 \item e.g. a concept car
@@ -181,11 +186,19 @@
         \textit{How detailed is the prototype?}
     \end{center}
     \vskip20pt
-    \alert{Lower fidelity}\\
-    Less detailed, less realistic\\
+    \alert{Lower fidelity}
+    \begin{itemize}
+        \item Less detailed, less realistic
+        \item Good for: flow, functionality, terminology, screen content
+        \item Bad for: Look \& feel, response, feedback
+    \end{itemize}
     \vskip20pt
-    \alert{Higher fidelity}\\
-    More detailed, more realistic
+    \alert{Higher fidelity}
+    \begin{itemize}
+        \item More detailed, more realistic
+        \item Good for: Look \& feel, feedback, colours/fonts
+        \item Bad for: Quick re-design
+    \end{itemize}
 }
 
 \frame{
@@ -194,7 +207,7 @@
         \column{.7\textwidth}
             \begin{itemize}
                 \item First-mid cycles in iterative design
-                \item Very cheap
+                \item Very cheap - start with a sketch
                 \item Very quick to develop and turn around (easily changed)
                 \item Use a medium unlike final product (e.g. whiteboard, paper, post-its, digital sketches)
                 \item Design team meet together and bash out ideas
@@ -207,6 +220,21 @@
         \column{.3\textwidth}
             \includegraphics[width=3cm]{media/lowfi_prototype.jpg}
     \end{columns}
+}
+
+\frame{
+    \frametitle{Prototyping: Low fidelity}
+    \textbf{How to evaluate and test?}
+    \begin{itemize}
+        \item When demoing
+        \begin{itemize}
+            \item Pointing = clicking
+            \item Writing = typing
+            \item Each sheet or card = new `screen'
+            \item Can make small changes easily
+        \end{itemize}
+        \item Evaluation (user, heuristic, cognitive)
+    \end{itemize}
 }
 
 \frame{
@@ -225,6 +253,19 @@
         \column{.3\textwidth}
             \includegraphics[width=3cm]{media/vp_wireframe.png}
     \end{columns}
+}
+
+\frame{
+    \frametitle{Prototyping: Medium-fidelity}
+    \textbf{Done through \textit{wireframing}}
+    \begin{itemize}
+        \item Each wireframe represents an implemented screen design
+        \item Sequence of wireframes indicates application/task flow
+        \item Use GUI builders/wireframers
+        \begin{itemize}
+            \item Many allow system-specific components
+        \end{itemize}
+    \end{itemize}
 }
 
 \frame{
@@ -270,14 +311,32 @@
 \frame{
      \frametitle{Revision questions}
      \begin{enumerate}
-        \item
+        \item What is interaction design?
+        \item What must happen before the `design' stage?
+        \item Briefly describe the two parts to interaction design.
+        \item What is a prototype with respect to interface design?        
+        \item What does an interface prototype capture?
+        \item Explain what is meant by a low-fidelity UI prototype and how it can be evaluated.
+        \item What are the main advantages and disadvantages of high-fidelity prototyping in iterative design?
+        \item Why are most prototypes compromised?
      \end{enumerate}
 }
 
 \frame{
     \frametitle{Summary}
     \begin{itemize}
-        \item
+        \item Interaction \alert{design}
+        \begin{itemize}
+            \item Conceptual design
+            \item Physical design
+        \end{itemize}
+        \item Prototype \alert{implementation}
+        \begin{itemize}
+            \item Importance of prototypes and what they encapsulate
+            \item How prototypes change further through iterative process
+            \item Low- to high-fidelity prototyping
+            \item Prototype compromise
+        \end{itemize}
     \end{itemize}
 }    
 
