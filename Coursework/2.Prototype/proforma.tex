@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage[dvipsnames]{color}
+
+\definecolor{mygray}{gray}{.75}
+
+\titleformat{name=\section,numberless}[display]
+  {\normalfont\scshape\Large}
+  {\hspace*{-10pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+80pt\relax}{2pt}\Huge}
+\titlespacing*{\section}{0pt}{30pt}{10pt}
+
+\titleformat{name=\subsection,numberless}[display]
+  {\normalfont\scshape}
+  {\hspace*{-10pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+30pt\relax}{0.4pt}\Huge}
+\titlespacing*{\subsection}{0pt}{20pt}{5pt}
+
+
+\begin{document}
+
+\Large\textbf{Cardiff School of Computer Science and Informatics}\\
+\large\textit{Coursework Proforma}
+\vskip15pt
+
+\section*{General}
+
+\begin{description}
+    \item[Module] CM2101 (Human-Computer Interaction)
+    \item[Lecturer] Will Webberley
+    \item[Title] Part 2: User Interface Prototyping and Heuristic Evaluation
+    \item[Hand-out] Week 2 (Tuesday 21st October)
+    \item[Hand-in] Week 7 (see below)
+    \item[Coursework worth] 30\%
+    \item[Assessment type] Individual
+\end{description}
+This coursework is worth 30\% of the total marks available for this module.
+
+The penalty for late or non-submission is an award of zero marks. You are reminded of the need to comply with Cardiff University's Student Guide to Academic Integrity. Your work should be submitted using the official Coursework Submission Cover sheet.
+
+\subsection*{Submission Arrangements}
+There are \textbf{two main} submission components for this coursework.
+\begin{enumerate}
+    \item \textbf{Week 7 (Friday 14th November @ 17:00)} - Electronic submission of support files. See \textit{Submission instructions} section below for more details.
+    \item \textbf{Week 8 (Your designated Monday lab session)} - Five minute demonstration of your finished prototype and heuristic evaluation to lab assessors. This should \textit{not} be modified between the end of Week 7 and your demonstration. More information on this follows below.
+\end{enumerate}
+You must follow all of the submission components in order to achieve the marks for this assessment.
+ 
+\section*{Instructions}
+
+In this coursework, you will need to develop an interface design prototype for a chosen application and to carry out a heuristic evaluation against Neilsen's heuristics. There is a small written-up component for the coursework.
+
+In general, the coursework should follow these steps:
+\begin{enumerate}
+    \item Choose an application to develop an interface for
+    \item Choose \textbf{three} tasks relating to your chosen application
+    \item Choose a platform to support the interface
+    \item Plan and develop the interface to support your chosen tasks
+    \item Heuristically evaluate your interface
+    \item Submit supporting documentation covering a description of your app and chosen tasks (see below)
+    \item Demonstrate your prototype and explain your evaluations
+\end{enumerate} 
+Marks for this coursework are awarded as follows:
+\begin{itemize}
+    \item \textbf{55\%} - Interface prototype (demonstrated)
+    \item \textbf{35\%} - Heuristic evaluation (demonstrated)
+    \item \textbf{10\%} - Supporting information (submitted to Learning Central)
+\end{itemize}
+You will be given access to the mark scheme for this coursework, so read through that to see a more complete breakdown.
+
+
+\subsection*{Interface Prototype and Heuristic Evaluation}
+For this stage, you should consider a GUI application for which a user interface is appropriate. You can choose whichever type of application you wish to model (within reason!), as long as it allows you to create suitable tasks for it. You should identify three tasks that typical users of your app would carry out. They need not be \textit{hugely} complex, but should have different flows and goals. Below are some example applications (though you should not select these):
+\begin{itemize} 
+    \item \textbf{Cinema booking app} for \textit{tablets} - Example tasks within this application:
+        \begin{itemize}
+            \item Searching for upcoming showing times of movies
+            \item Select a movie, choose ticket type(s), and select auditorium seat(s)
+            \item Find an existing booking and modify the seat selection(s)
+        \end{itemize}
+   \item \textbf{Gym tracking app} for \textit{smartphones} - Example tasks within this application:
+        \begin{itemize}
+            \item Adding a workout activity of a specific type, duration, and intensity to a fitness diary
+            \item Searching for and adding other users of the app as friends 
+            \item Create workout `routines' by selecting from pre-existing workout activities
+        \end{itemize}
+\end{itemize}
+Once you have an application idea, consider the platform most appropriate for it (you may end up deciding to choose the platform \textit{before} choosing the application type). Suitable platforms include (but are not limited to);
+\begin{itemize}
+    \item Smartphone or tablet app (Android, iOS, generic, ...)
+    \item Web app / Web site (full desktop, responsive, ...)
+    \item Desktop app (OS X, GNOME, Windows, ...)
+    \item Wearables app (Pebble, Android Wear watches, Google Glass, ...) [These are more tricky, and you'd have to think hard about the way your design would work]
+\end{itemize}
+When designing your interface, remember to:
+\begin{itemize}
+    \item Consider the task goals and how these are to be supported
+    \item Refer to design patterns and design guides
+    \item Ensure layout and component consistency
+    \item Carefully consider the choice of UI components
+    \item Consider your intended user population
+    \item Remember that you will need to heuristically evaluate it afterwards
+\end{itemize}
+At this stage, you need to start designing your interface to support the three tasks you identified earlier. For this, you may want to consider a `main app screen', from which users can navigate to other areas of the app through menus and buttons. If you wish to construct use-cases consisting of basic and alternative flows to help you, then this could be useful (though this will not be assessed in this coursework). 
+
+Interface design prototypes can be made through GUI-builders, such as Visual Paradigm, NetBeans, AndroidStudio, and Xcode (the latter three will require you to write code to handle input events). Most students will likely choose to use the Visual Paradigm application introduced in lectures for creating prototypes, however some may prefer to write the code required in order to actually \textit{create} their chosen app and make the prototype more interactive. Lab tutors will be able to provide support for Visual Paradigm and some may have experience with other platforms too. 
+
+It is up to you to decide what level of fidelity your prototype will have, but note that the students who decide to spend more time improving the fidelity using code or logic will receive no more marks than those creating medium-fidelity prototypes in Visual Paradigm.
+
+Please also note that \textbf{no marks} are awarded for the originality or complexity of the idea or application. Any design prototype following the instructions and supporting three suitable tasks is capable of receiving full marks.
+
+After completing your prototype \textit{design}, you should conduct a heuristic \textit{evaluation} (following the iterative interaction design framework) on your three tasks. You need not write these up into a report or hand this in, but you should write notes so that you can explain these to your assessors in the demo.
+
+When demonstrating your app in Week 8, you are generally free to do so as you choose - for example, you could take an assessor through your app using Visual Paradigm (explaining your work throughout), or, if you've made a smartphone application, you could demo it using your phone.
+
+Throughout your demo, you will need to evaluate your design choices against Neilsen's heuristics. You should choose \textbf{five}  of the heuristics and explain how your prototype addresses them (either positively or negatively) in your three tasks. The key here is to convey your understanding of heuristic evaluation to your assessor. For example, you could say something like:
+\begin{center}
+    ``At this stage, if the user input is malformed, this error is displayed explaining to the user exactly how to solve the problem; thus addressing Neilsen's `Error Recovery' heuristic, which refers to the `Error' usability principle.''
+\end{center}
+or:
+\begin{center}
+   ``I feel this screen is not `Consistent' as a usability principle, as it does not follow the Android development guidelines of placing contextual menus in the action bar. This was identified when evaluated against Neilsen's `Consistency and Standards' heuristic.''
+\end{center}
+
+Assessors will not prompt you for your evaluations, so you need to make it clear when you are trying to explain these.
+
+It is your responsibility to ensure that you are able to demonstrate your design prototype in your designated lab session in Week 8. Each student will have around five minutes to demo, so think beforehand about the most efficient way to show all of your work and to explain your evaluations.
+
+
+\subsection*{Supporting Information}
+By the end of Week 7, you should submit some supporting documents to Learning Central.
+
+One of these documents should be a brief overview (no more than one page) of your chosen system, its platform (with justification), its intended audience, its uses, and describe the three tasks you have identified.
+
+There are then two options for the second document:
+
+\vskip10pt
+\begin{itemize}
+    \item \textbf{If you have used Visual Paradigm for your prototype} - Submit a PDF of your Visual Paradigm wireframes 
+    \item \textbf{Otherwise} - Submit a short PDF documenting your prototype, including screenshots (or photos, if screenshots are inappropriate for your app) and short captions (if necessary) of how these relate to the tasks you've identified
+\end{itemize}
+
+If you have used Visual Paradigm, each individual state of your prototype can be exported individually by following these steps:
+\begin{enumerate}
+    \item Open your project and open your wireframe diagram
+    \item Select a state to export
+    \item Right-click the background 
+    \item Select `Export' $>$ `Export as Image...'
+    \item Follow the instructions 
+\end{enumerate}
+
+Please then combine all of the exported images into a single PDF document either by copying the resultant images into a word-processed document or by combining resultant PDFs.
+
+For some reason, there doesn't seem to be a way of exporting the entire diagram as an image. If you manage it, however, then submit that instead.
+
+\section*{Submission instructions}
+All submissions should be made electronically through Learning Central by the end of Week 7 (see top of brief for deadline information).
+%\noindent Every student should submit an electronic cover sheet.\\
+%\noindent Every student should submit a (max. one-page) description of their chosen system, its audience, and a brief overview of the tasks identified.\\
+%\noindent Every student should submit a support file.\\
+\\
+\begin{tabular}{| l | l | l |}
+    \hline
+    \textsc{Description} & \textsc{Type} & \textsc{Name} \\
+    \hline
+    Cover sheet (\textbf{Compulsory}) & PDF & [student number].pdf \\
+    System overview (\textbf{Compulsory}) & PDF & overview\_[student number].pdf \\ 
+    Support file (\textbf{Compulsory}) & PDF & support\_[student number].pdf\\
+    \hline
+\end{tabular}
+
+\section*{Criteria for assessment}
+Credit will be awarded against the following criteria.
+\begin{itemize}
+    \item Ability to design and evaluate medium fidelity user interface prototypes
+    \item Ability to identify distinct tasks with a system
+    \item Appreciation of the different design goals of different systems
+    \item Consideration of the app's audience, given by an intended user population
+    \item Ability to understand heuristic evaluation and how to apply this to an interface design
+    \item Understanding of Neilsen's heuristics
+\end{itemize}
+Feedback on your performance will address each of these criteria. However, for a more detailed break-down, please see the mark scheme.
+
+\section*{Further details}
+Feedback on your coursework will address the above criteria and will be returned in approximately 3 weeks.\\
+This will be supplemented with oral feedback via lectures.
+
+\end{document}
