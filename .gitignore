@@ -7,4 +7,6 @@
 *.snm
 *.toc
 *.pdf
-Labs/*.tex
+Tutorials/2/*
+Tutorials/3/*
+Tutorials/4/*
