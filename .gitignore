@@ -7,9 +7,6 @@
 *.snm
 *.toc
 *.pdf
-Tutorials/2/*
-Tutorials/3/*
-Tutorials/4/*
 Exam/*
 Admin/*
 Admin/Feedback response/*

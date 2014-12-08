@@ -1,0 +1,93 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage[dvipsnames]{color}
+
+\definecolor{mygray}{gray}{.75}
+
+\titleformat{name=\section,numberless}[display]
+  {\normalfont\scshape\Large}
+  {\hspace*{-10pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+80pt\relax}{2pt}\Huge}
+\titlespacing*{\section}{0pt}{30pt}{10pt}
+
+\titleformat{name=\subsection,numberless}[display]
+  {\normalfont\scshape}
+  {\hspace*{-10pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+30pt\relax}{0.4pt}\Huge}
+\titlespacing*{\subsection}{0pt}{20pt}{5pt}
+
+
+\begin{document}
+
+\noindent\Large\textbf{CM2101 (Human-Computer Interaction)}\\
+\noindent\large\textit{Non-assessed Tutorial 2}
+\vskip30pt
+
+Consider a web-based cinema reservation system for a desktop computer or laptop. The system allows for tickets to be reserved and then paid for and collected later at the cinema. The following sequence of events takes place:
+\begin{enumerate}
+    \item System presents list of movies
+    \item User selects movie from drop-down list and presses continue
+    \item System presents list of available times as a series of buttons
+    \item User selects the time by clicking a button
+    \item System asks for the number of tickets needed
+    \item User uses buttons to increment and decrement number of tickets and presses continue
+    \item System shows confirmation and a reservation number is displayed.
+\end{enumerate}
+
+\section*{Questions}
+
+\begin{enumerate}
+
+\item Carry out a GOMS analysis for the `reserve tickets' task.
+
+\item Using the operators identified in Question 1, carry out KML analysis to give the estimated completion time for the task given the following assumptions.
+    \begin{itemize}
+        \item Movie, times, and tickets are all available as required
+        \item 4 tickets are needed
+        \item User completes the task successfully      
+    \end{itemize}
+
+    The table below lists completion times for common operators.\\  
+    \vskip10pt
+    \begin{tabular}{| c | l | l | r |}
+        \hline
+        \textbf{Operator} & \textbf{Action} & \textbf{Action info} & \textbf{Time (sec.)}\\
+        \hline
+        \hline
+        K & Press key & Good typist & 0.12\\
+        & & Poor typist & 0.28\\
+        \hline
+        B & Mouse button & Press or release & 0.10\\
+        & & click & 0.20\\
+        \hline
+        P & Point & mouse or finger & 1.10\\
+        \hline
+        H & `Home' hands &  & 0.40\\
+        \hline
+        M & Mentally prepare & & 1.35\\
+        \hline
+        R & Response time & System-dependent & $t$\\
+        \hline 
+    \end{tabular}
+
+\item Decompose and represent the task in Jackson Structured Notation given the folllowing assumptions.
+    \begin{itemize}
+        \item Available movies:
+            \begin{itemize}
+                \item The Imitation Game
+                \item The Hobbit 3  
+            \end{itemize}
+        \item Available times (for all movies):
+            \begin{itemize}
+                \item 18:00
+                \item 19:30
+                \item 21:00
+            \end{itemize}
+    \end{itemize}   
+
+\end{enumerate}
+
+\end{document}
